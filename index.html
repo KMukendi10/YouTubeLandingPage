@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kazadi YouTube Clone</title>
     <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,29 +14,38 @@
 
         <section class="logo-section">
             <div class="logo-container">
-                <img src="./Assets/MenuIcon.svg" alt="Menu Icon">
+                <button type="button" class="icon-button" id="menu" aria-label="Toggle menu">
+                    <img src="./Assets/MenuIcon.svg" alt="">
+                </button>
                 <img src="./Assets/YouTubeLogo.svg" alt="YouTube Logo">
                 <sup>ZA</sup>
             </div>
         </section>
 
         <section class="search-section">
-            <div class="search-container">
-                <input type="text" placeholder="Search" id="search">
-                <img src="./Assets/SearchButton.svg" alt="Search Button" id="search-button">
-            </div>
+            <form class="search-container" id="search-form">
+                <input type="text" placeholder="Search" id="search" aria-label="Search videos">
+                <button type="submit" class="search-button" id="search-button" aria-label="Search">
+                    <img src="./Assets/SearchButton.svg" alt="">
+                </button>
+            </form>
             
-            <div>
-                <img src="./Assets/VoiceSearchIcon.svg" alt="Voice Search Icon" id="voice-search">
-            </div>
+            <button type="button" class="icon-button voice-button" id="voice-search" aria-label="Voice search">
+                <img src="./Assets/VoiceSearchIcon.svg" alt="">
+            </button>
         </section>
 
         <section class="user-section">
             <div class="user-actions">
-                <button><img src="./Assets/Create.svg" alt="Create">Create</button>
-                <img src="./Assets/NotificationsIcon.svg" alt="Notifications Icon" id="notifications">
-                <span>6+</span>
-                <img src="./Assets/ProfileIcon.svg" alt="Profile" id="avatar">
+                <button type="button" class="create-button">
+                    <img src="./Assets/Create.svg" alt="">
+                    <span>Create</span>
+                </button>
+                <div class="notification-wrapper">
+                    <img src="./Assets/NotificationsIcon.svg" alt="Notifications" id="notifications">
+                    <span class="notification-badge">6+</span>
+                </div>
+                <img src="./Assets/ProfileIcon.svg" alt="Profile" id="avatar" class="profile-icon">
             </div>
         </section>
 
@@ -44,6 +53,7 @@
 
     <aside>
         <section class="home">
+
             <div>
                 <img src="./Assets/HomeIcon.svg" alt="Home Icon">
                 <h4>Home</h4>
@@ -52,6 +62,7 @@
                 <img src="./Assets/ShortsIcon.svg" alt="Shorts Icon">
                 <h4>Shorts</h4>
             </div>
+
         </section>
 
         <h3>Subscriptions ></h3>        
@@ -164,7 +175,7 @@
                 <img src="./Assets/Report.svg" alt="Report History Icon">
                 <h4>Report History</h4>
             </div>
-            
+
         </section>
     
         <footer>

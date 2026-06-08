@@ -107,43 +107,26 @@ aside section {
     padding-bottom: 15px;
 }
 
-/* Home Section */
-.home-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-section h4 {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0;
-}
-
-.home-section div {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-/* Subscriptions */
 h3 {
     font-size: 18px;
     font-weight: 600;
     margin: 20px 0 10px 0;
 }
-.subscriptions {
+
+.home, .subscriptions, .explore, .you, .more, .report {
     display: flex;
     flex-direction: column;
 }
 
-.subscriptions div {
+.home div, .subscriptions div, .explore div, .you div, .more div, .report div {
     display: flex;
     align-items: center;
     height: 40px;
     gap: 25px;
+    cursor: pointer;
 }
 
-.subscriptions h4 {
+.home h4, .subscriptions h4, .explore h4, .you h4, .more h4, .report h4 {
     font-size: 15px;
     font-weight: 500;
 }
@@ -152,6 +135,38 @@ h3 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+}
+
+.report {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.report h4 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+footer {
+    width: 175px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer a {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer p {
+    color: #757575;
+    font-size: 13px;
+    margin-top: 0;
 }
 
 /* Filtering Buttons */

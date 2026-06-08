@@ -4,13 +4,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    background-color: white;
-    z-index: 1000;
 }
 
 .logo-container {

@@ -4,6 +4,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 500;
 }
 
 .logo-container {
@@ -198,6 +202,11 @@ footer p {
     padding: 10px;
     gap: 15px;
     overflow-x: auto;
+    position: sticky;
+    top: 56px;
+    margin-left: 230px;
+    background-color: white;
+    z-index: 900;
 }
 
 ::-webkit-scrollbar {

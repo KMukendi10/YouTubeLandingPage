@@ -203,10 +203,10 @@ footer p {
     gap: 15px;
     overflow-x: auto;
     position: sticky;
-    top: 56px;
+    top: 50px;
     margin-left: 230px;
     background-color: white;
-    z-index: 900;
+    z-index: 1000;
 }
 
 ::-webkit-scrollbar {

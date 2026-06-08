@@ -1,14 +1,17 @@
+/* Header/Nav Bar */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
+/* Menu and YouTube Logo */
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 sup {
@@ -19,6 +22,7 @@ sup {
     color: grey;
 }
 
+/* Search Section */
 .search-section {
     display: flex;
     align-items: center;
@@ -55,6 +59,7 @@ sup {
     padding: 6px;
 }
 
+/* User Actions */
 .user-actions {
     display: flex;
     align-items: center;
@@ -87,19 +92,69 @@ sup {
     margin-right: -15px;
 }
 
+/* Sidebar */
 aside {
     width: 200px;
     gap: 20px;
-    padding: 10px;
+    padding: 15px;
     float: left;
     height: 100vh;
     overflow-y: auto;
 }
 
 aside section {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 15px;
 }
 
+/* Home Section */
+.home-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.home-section div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Subscriptions */
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+.subscriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscriptions div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 25px;
+}
+
+.subscriptions h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.subscriptions img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+/* Filtering Buttons */
 .filter {
     display: flex;
     padding: 10px;
@@ -113,13 +168,13 @@ aside section {
 
 .filter button {
     background-color: #ebe9e9;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 550;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     width: fit-content;
-    height: 30px;
+    height: 35px;
 }
 
 main {

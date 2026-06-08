@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kazadi YouTube Clone</title>
     <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,38 +14,32 @@
 
         <section class="logo-section">
             <div class="logo-container">
-                <button type="button" class="icon-button" id="menu" aria-label="Toggle menu">
-                    <img src="./Assets/MenuIcon.svg" alt="">
-                </button>
+                <img src="./Assets/MenuIcon.svg" alt="Menu Icon" id="menu">
                 <img src="./Assets/YouTubeLogo.svg" alt="YouTube Logo">
                 <sup>ZA</sup>
             </div>
         </section>
 
         <section class="search-section">
-            <form class="search-container" id="search-form">
-                <input type="text" placeholder="Search" id="search" aria-label="Search videos">
-                <button type="submit" class="search-button" id="search-button" aria-label="Search">
-                    <img src="./Assets/SearchButton.svg" alt="">
-                </button>
-            </form>
+            <div class="search-container">
+                <input type="text" placeholder="Search" id="search">
+                <img src="./Assets/SearchButton.svg" alt="Search Button" id="search-button">
+            </div>
             
-            <button type="button" class="icon-button voice-button" id="voice-search" aria-label="Voice search">
-                <img src="./Assets/VoiceSearchIcon.svg" alt="">
-            </button>
+            <div>
+                <img src="./Assets/VoiceSearchIcon.svg" alt="Voice Search Icon" id="voice-search">
+            </div>
         </section>
 
         <section class="user-section">
             <div class="user-actions">
-                <button type="button" class="create-button">
-                    <img src="./Assets/Create.svg" alt="">
-                    <span>Create</span>
-                </button>
-                <div class="notification-wrapper">
-                    <img src="./Assets/NotificationsIcon.svg" alt="Notifications" id="notifications">
-                    <span class="notification-badge">6+</span>
+                <div class="create-button">
+                    <img src="./Assets/Create.svg" alt="Create">
+                    <h4>Create</h4>
                 </div>
-                <img src="./Assets/ProfileIcon.svg" alt="Profile" id="avatar" class="profile-icon">
+                <img src="./Assets/NotificationsIcon.svg" alt="Notifications Icon" id="notifications">
+                <span>6+</span>
+                <img src="./Assets/ProfileIcon.svg" alt="Profile" id="avatar">
             </div>
         </section>
 
@@ -221,87 +215,99 @@
         <button>Travel</button>
         <button>Vehicles</button>    
     </section>
-
-    <main>        
+    
+    <main>
         <section>
-            <video controls></video>
+            <video controls poster="https://picsum.photos/seed/football1/640/360"></video>
             <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
+                <img src="./Assets/LaLiga.jpg" alt="Video Thumbnail">
+                <h3>Barcelona vs Real Madrid | El Clásico Highlights 2026</h3>
+                <p>La Liga</p>
+                <p>4.2M views • 2 days ago</p>
+            </div>
+        </section>
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/football2/640/360"></video>
+            <div>
+                <img src="./Assets/ChelseaFC.jpg" alt="Video Thumbnail">
+                <h3>Chelsea Training Session Behind the Scenes</h3>
+                <p>Chelsea FC</p>
+                <p>890K views • 1 week ago</p>
+            </div>
+        </section>        
+        
+        <section>
+            <video controls poster="https://picsum.photos/seed/football3/640/360"></video>
+            <div>
+                <img src="./Assets/UEFA.jpg" alt="Video Thumbnail">
+                <h3>UEFA Champions League Best Goals This Season</h3>
+                <p>UEFA</p>
+                <p>2.1M views • 3 days ago</p>
+            </div>
+        </section>
+        
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/football4/640/360"></video>
+            <div>
+                <img src="./Assets/SuperSport.jpg" alt="Video Thumbnail">
+                <h3>SuperSport PSL Review | Matchday 28</h3>
+                <p>SuperSport</p>
+                <p>156K views • 5 hours ago</p>
+            </div>
+        </section>
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/coding1/640/360"></video>
+            <div>
+                <img src="./Assets/UEFA.jpg" alt="Video Thumbnail">
+                <h3>Learn JavaScript in 60 Minutes - Full Course</h3>
+                <p>Code Academy ZA</p>
+                <p>1.8M views • 1 month ago</p>
+            </div>
+        </section>
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/gaming1/640/360"></video>
+            <div>
+                <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
+                <h3>Top 10 Barcelona Moments of 2026</h3>
+                <p>FC Barcelona</p>
+                <p>3.5M views • 4 days ago</p>
+            </div>
+        </section>
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/music1/640/360"></video>
+            <div>
+                <img src="./Assets/ChelseaFC.jpg" alt="Video Thumbnail">
+                <h3>Amapiano Mix 2026 | Best of South African House</h3>
+                <p>ZA Music Hub</p>
+                <p>920K views • 2 weeks ago</p>
+            </div>
+        </section>
+    
+        <section>
+            <video controls poster="https://picsum.photos/seed/news1/640/360"></video>
+            <div>
+                <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
+                <h3>Daily News Briefing | South Africa Edition</h3>
+                <p>News24</p>
+                <p>45K views • 6 hours ago</p>
             </div>
         </section>
 
         <section>
-            <video controls></video>
+            <video controls poster="https://picsum.photos/seed/news1/640/360"></video>
             <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
+                <img src="./Assets/SuperSport.jpg" alt="Video Thumbnail">
+                <h3>Daily News Briefing | South Africa Edition</h3>
+                <p>News24</p>
+                <p>45K views • 6 hours ago</p>
             </div>
         </section>
 
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
-
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
-
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
-
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
-
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
-
-        <section>
-            <video controls></video>
-            <div>
-                <img src="" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time</p>
-            </div>
-        </section>
     </main>
 
 </body>

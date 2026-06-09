@@ -227,6 +227,7 @@ footer p {
     margin-top: 0;
 }
 
+/* Category section */
 .filter {
     display: flex;
     padding: 10px;
@@ -259,6 +260,7 @@ footer p {
     color: white;
 }
 
+/* Video Section */
 main {
     margin-left: 230px;
     display: grid;

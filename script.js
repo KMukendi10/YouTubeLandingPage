@@ -1,3 +1,4 @@
+// My dark mode feature addition
 const themeToggle = document.getElementById("theme-toggle");
 
 themeToggle.addEventListener("click", function () {
@@ -10,6 +11,7 @@ themeToggle.addEventListener("click", function () {
     }
 });
 
+// Cursor addition features
 const searchInput = document.getElementById("search");
 const filterButtons = document.querySelectorAll(".filter button");
 const videos = document.querySelectorAll("main section");

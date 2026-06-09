@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kazadi YouTube Clone</title>
     <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,13 +32,14 @@
 
         <section class="user-section">
             <div class="user-actions">
+                <button id="theme-toggle">🌙</button>
                 <div class="create-button">
                     <img src="./Assets/Create.svg" alt="Create">
                     <h4>Create</h4>
                 </div>
                 <img src="./Assets/NotificationsIcon.svg" alt="Notifications Icon" id="notifications">
                 <span>6+</span>
-                <img src="./Assets/ProfileIcon.svg" alt="Profile" id="avatar">
+                <img src="./Assets/MyYouTubeProfile.jpg" alt="Profile" id="avatar">
             </div>
         </section>
 
@@ -199,25 +199,25 @@
     </aside>
 
     <section class="filter">
-        <button>All</button>
-        <button>Live</button>
-        <button>Gaming</button>
-        <button>Music</button>
-        <button>News</button>
-        <button>Sports</button>
-        <button>Learning</button>
-        <button>Fashion</button>
-        <button>Comedy</button>
-        <button>Entertainment</button>
-        <button>Podcast</button>
-        <button>Movies</button>
-        <button>TV</button>
-        <button>Travel</button>
-        <button>Vehicles</button>    
+        <button data-category="all">All</button>
+        <button data-category="live">Live</button>
+        <button data-category="gaming">Gaming</button>
+        <button data-category="music">Music</button>
+        <button data-category="news">News</button>
+        <button data-category="sports">Sports</button>
+        <button data-category="learning">Learning</button>
+        <button data-category="fashion">Fashion</button>
+        <button data-category="comedy">Comedy</button>
+        <button data-category="entertainment">Entertainment</button>
+        <button data-category="podcast">Podcast</button>
+        <button data-category="movies">Movies</button>
+        <button data-category="tv">TV</button>
+        <button data-category="travel">Travel</button>
+        <button data-category="vehicles">Vehicles</button>    
     </section>
     
     <main>
-        <section>
+        <section data-category="sports">
             <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
             allowfullscreen>
             </iframe>
@@ -230,36 +230,30 @@
             </div>
         </section>
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/uCBlU2VLmYc"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/7bwGAuuKEuQ" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/LaLiga.jpg" alt="Video Thumbnail">
-                <h3>ALL LALIGA EA SPORTS 2023/24 GOALS!</h3>
-                <p>LALIGA</p>
-                <p>254k views • 1 year ago</p>
+                <h3>The Best Goals Of The 2025/26 Premier League Season | Part 2</h3>
+                <p>Premier League</p>
+                <p>338k views • 6 days ago</p>
             </div>
         </section>
         
-        <section>
-            <iframe src="https://youtu.be/nPsz2ggTAkk?t=171"
-            allowfullscreen>
-            </iframe>
+        <section data-category="movies">
+            <iframe src="https://www.youtube.com/embed/Ff4eFJGx06c?si=TYO41tHKQhVD1Lyq" allowfullscreen></iframe>
 
             <div>
-                <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
-                <h3>Heart of a Lio: The amazing animated short film by Gatorade</h3>
-                <p>FC Barcelona</p>
-                <p>56M views • 8 years ago</p>
+                <img src="./Assets/RaeCinema.jpg" alt="Video Thumbnail">
+                <h3>SPIDER-MAN: Beyond the Spider-Verse (2027) First Look Reveal</h3>
+                <p>Rae Cinema</p>
+                <p>19K views • 2 days ago</p>
             </div>
         </section>        
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -269,10 +263,8 @@
             </div>
         </section>
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -282,10 +274,8 @@
             </div>
         </section>
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -295,10 +285,8 @@
             </div>
         </section>
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -308,10 +296,8 @@
             </div>
         </section>
     
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -321,10 +307,8 @@
             </div>
         </section>
 
-        <section>
-            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8"
-            allowfullscreen>
-            </iframe>
+        <section data-category="sports">
+            <iframe src="https://www.youtube.com/embed/gmSyrNo2gZ8" allowfullscreen></iframe>
 
             <div>
                 <img src="./Assets/FCBarcelona.jpg" alt="Video Thumbnail">
@@ -336,5 +320,6 @@
 
     </main>
 
+<script src="script.js"></script>
 </body>
 </html>

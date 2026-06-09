@@ -70,6 +70,31 @@ sup {
 }
 
 /* User Actions */
+#theme-toggle {
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode aside,
+.dark-mode .filter {
+    background-color: #181818;
+}
+
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p {
+    color: white;
+}
+
 .user-actions {
     display: flex;
     align-items: center;
@@ -114,6 +139,12 @@ sup {
     cursor: pointer;
 }
 
+#avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 /* Sidebar */
 aside {
     width: 200px;
@@ -149,7 +180,7 @@ h3 {
 }
 
 aside div:hover {
-    background-color: #d8d7d7;
+    background-color: #ebeaea;
     border-radius: 5px;
 }
 
@@ -196,7 +227,6 @@ footer p {
     margin-top: 0;
 }
 
-/* Filtering Buttons */
 .filter {
     display: flex;
     padding: 10px;
@@ -209,7 +239,7 @@ footer p {
     z-index: 1000;
 }
 
-::-webkit-scrollbar {
+.filter::-webkit-scrollbar {
     display: none;
 }
 
@@ -224,33 +254,39 @@ footer p {
     height: 35px;
 }
 
+.filter button.active-filter {
+    background-color: black;
+    color: white;
+}
+
 main {
+    margin-left: 230px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 10px;
+    height: 76vh;
+    overflow-y: auto;
 }
 
 main section {
-  cursor: pointer;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
 }
 
-main video,
+main section:hover {
+    background-color: #ebe9e9;
+}
+
 main iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 12px;
     border: none;
     object-fit: cover;
-}
-
-main section video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #ddd;
-  border-radius: 12px;
-  object-fit: cover;
-  display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 main section div {
@@ -258,6 +294,14 @@ main section div {
   grid-template-columns: 40px 1fr;
   column-gap: 12px;
   margin-top: 12px;
+}
+
+main section div h3 {
+    transition: color 0.3s ease;
+}
+
+main section:hover h3 {
+    color: #065fd4;
 }
 
 main section div img {
